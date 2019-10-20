@@ -19,9 +19,9 @@ env:
     - NG_CLI_ANALYTICS="false"
 before_install:
   - if [[ $JHI_JDK == '8' ]]; then
-      echo '*** Using OpenJDK 8'
+      echo '*** Using OpenJDK 8';
     else
-      echo '*** Using OpenJDK 11 by default'
+      echo '*** Using OpenJDK 11 by default';
     fi
   - java -version
   - sudo /etc/init.d/mysql stop
