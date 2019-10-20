@@ -33,10 +33,10 @@ script:
   - chmod +x mvnw
   - ./mvnw -ntp clean verify
   - ls
-  - ls ~/.m2
-  - ./mvnw -ntp com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='run test' -Dmaven.repo.local=$MAVEN_USER_HOME
+  - ls ~/.m2/repository
+  - ./mvnw com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='run test' -Dmaven.repo.local=$MAVEN_USER_HOME
   - ls
-  - ls ~/.m2
+  - ls ~/.m2/repository
   - ./mvnw -ntp verify -Pprod -DskipTests
 notifications:
   webhooks:
