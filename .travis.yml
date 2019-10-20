@@ -36,6 +36,8 @@ before_install:
   - npm install -g npm
   - node -v
   - npm -v
+  - echo $MAVEN_USER_HOME
+  - env
 install:
   - npm install
 script:
